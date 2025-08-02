@@ -1,0 +1,153 @@
+body {
+  font-family: "Noto Sans KR", "Noto Sans JP", "Noto Sans", Arial, sans-serif;
+  background: #f7f7fa;
+  margin: 0;
+  color: #222;
+}
+header {
+  position: relative;
+  background: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+.header-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+header h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2.2rem;
+  letter-spacing: 0.1em;
+}
+.lang-switch {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.lang-switch button {
+  background: #e0e0e0;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.lang-switch button.active {
+  background: #222;
+  color: #fff;
+}
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.song-block {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  overflow: hidden;
+}
+.song-block:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+.song-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1.2rem 1.5rem;
+  background: #f0f0f5;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.song-title .subtitle {
+  font-size: 1rem;
+  color: #888;
+  font-weight: normal;
+}
+.lyrics {
+  display: none;
+  padding: 1.2rem 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  background: #fff;
+  white-space: pre-line;
+}
+.song-block.open .lyrics {
+  display: block;
+  animation: fadeIn 0.3s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+footer {
+  text-align: center;
+  color: #aaa;
+  font-size: 0.95rem;
+  margin: 2rem 0 1rem 0;
+}
+.insta-link {
+  position: static;
+  margin-top: 0;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  z-index: 10;
+  transition: transform 0.15s;
+  background: none;
+  border: none;
+}
+.insta-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 2px 8px rgba(180, 156, 110, 0.13);
+  background: #fff;
+  border: none;
+}
+.insta-link:hover .insta-img {
+  transform: scale(1.12) rotate(-6deg);
+  box-shadow: 0 4px 16px rgba(180, 156, 110, 0.18);
+}
+@media (max-width: 600px) {
+  .song-title {
+    font-size: 1.05rem;
+    padding: 1rem;
+  }
+  .lyrics {
+    padding: 1rem;
+    font-size: 0.98rem;
+  }
+  main {
+    padding: 0 0.2rem;
+  }
+  .insta-link {
+    width: 38px;
+    height: 38px;
+    margin-left: 0.5rem;
+  }
+  .insta-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+}
