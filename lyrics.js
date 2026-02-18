@@ -88,6 +88,9 @@ const lyricsData = [
     },
     lyrics: {
       ko: `개미집을 지었어\n모든 걸 끌어다 지었어\n빗자루질 한 번에\n완전히 박살났어\n\n내가 세운 계획이 다\n휴지조각이 되었어\n내 전재산이 모두 다\n휴지조각이 되었어\n\n모든 걸 다 끌어모은\n내 바벨탑이 무너졌어\n모든 걸 끌어모아서\n또다시 지어보겠어\n\n내리막길은 언젠가\n끝을 찍고 올라가\n정신승리가 아니면\n버티기가 힘들어\n\n내가 세운 계획이 다\n휴지조각이 되었어\n내 전재산이 모두 다\n휴지조각이 되었어`,
+      en: `I built an anthill\nI dragged everything in and built it\nWith just one sweep of a broom\nIt got smashed to pieces\n\nAll the plans I made\nTurned into scraps of paper\nAll my savings, every bit of it\nTurned into scraps of paper\n\nEverything I had gathered\nMy tower of Babel collapsed\nI'll gather everything again\nAnd try to build it once more\n\nA downhill road, someday\nHits the bottom and climbs back up\nIf I don't win in my own head\nIt's too hard to hold on\n\nAll the plans I made\nTurned into scraps of paper\nAll my savings, every bit of it\nTurned into scraps of paper`,
+      es: `Construí un hormiguero\nJunté todo lo que pude y lo levanté\nCon una sola barrida de escoba\nQuedó hecho pedazos\n\nTodos los planes que hice\nSe volvieron pedazos de papel\nTodo mi patrimonio, todo\nSe volvió pedazos de papel\n\nTodo lo que había juntado\nMi torre de Babel se derrumbó\nVoy a volver a juntar todo\nY lo levantaré otra vez\n\nLa bajada, algún día\nToca fondo y vuelve a subir\nSi no me convenzo a la fuerza\nEs demasiado duro aguantar\n\nTodos los planes que hice\nSe volvieron pedazos de papel\nTodo mi patrimonio, todo\nSe volvió pedazos de papel`,
+      ja: `蟻塚を作った\n全部かき集めて作った\nほうきでひと掃きしただけで\n完全に粉々になった\n\n俺が立てた計画は全部\n紙くずになった\n俺の全財産も全部\n紙くずになった\n\n全部かき集めて積み上げた\n俺のバベルの塔が崩れた\n全部かき集めて\nもう一度建ててみる\n\n下り坂はいつか\n底を打ってまた上がる\n気持ちで勝てなきゃ\n踏ん張るのはきつい\n\n俺が立てた計画は全部\n紙くずになった\n俺の全財産も全部\n紙くずになった`,
     },
   },
   {
@@ -95,32 +98,41 @@ const lyricsData = [
       ko: "기시감",
       en: "Deja Vu",
       es: "Deja Vu",
-      ja: "デジャヴ",
+      ja: "既視感",
     },
     lyrics: {
       ko: `오늘 만난 그 여자애\n어디선가 본 것만 같아\n검은 눈에 검은 단발머리\n흔하디 흔한 스타일인데\n분위기가 뭔가 익숙한 것 같아\n생각해보니 그전도 그랬어\n\n내가 만났던 모든 여자들은\n소름 돋을 정도로 비슷했었지\n얼굴도 비슷해 분위기도 비슷해\n자석처럼 따라붙나 봐\n이제는 만날 때마다 느껴\n만날 때마다 그렇게 느껴져`,
+      en: `That girl I met today\nFeels like I've seen her somewhere before\nBlack eyes and a short black bob\nIt's just a very common style\nBut something in her vibe feels familiar\nNow that I think of it, it was like that before too\n\nEvery girl I used to meet\nWas similar enough to give me chills\nSimilar face, similar mood\nMaybe they stick to me like magnets\nNow I feel it every time I meet someone\nEvery time, it feels exactly like that`,
+      es: `La chica que conocí hoy\nSiento que la he visto en alguna parte\nOjos negros y melena corta negra\nEs un estilo de lo más común\nPero hay algo en su vibra que me resulta familiar\nAhora que lo pienso, antes también era así\n\nTodas las chicas que conocí\nSe parecían, hasta dar escalofríos\nCara parecida, aire parecido\nCapaz se me pegan como imanes\nAhora lo siento cada vez que conozco a alguien\nCada vez se siente exactamente igual`,
+      ja: `今日会ったあの子\nどこかで見た気がする\n黒い目に黒いボブ\nありふれたスタイルなのに\n雰囲気が妙に馴染みある\n考えてみれば前もそうだった\n\n俺が会ってきた女の子はみんな\nぞっとするほど似ていた\n顔も似てる 雰囲気も似てる\n磁石みたいに引き寄せられるのかも\nもう会うたびに感じる\n会うたびにそんな気がする`,
     },
   },
   {
     titles: {
       ko: "고해",
       en: "Confession",
-      es: "Confesion",
+      es: "Confesión",
       ja: "告解",
     },
     lyrics: {
       ko: `[Verse 1]\n매일 너를 원망하고\n나는 잘못이 없다고\n그나마 버틸 만해\n이게 나의 사는 태도\n할 게 없어 길을 걷다\n문득 드는 생각인데\n문젠 모두\n내가 만드는 거였어\n\n[Chorus]\n변한 것은 나였어\n변한 것은 나였어\n변한 것은 나였어\n너의 잘못은 없었어\n\n변한 것은 나였어\n변한 것은 나였어\n변한 것은 나였어\n이젠 돌이킬 수 없어\n\n[Verse 2]\n변한 것을 돌리려고\n기를 쓰고 해봤는데\n안 되는 건\n끝까지 안되었어\n이젠 내가 어떡할지\n아무것도 모르겠고\n찌꺼기만 달라붙어 남아있어\n\n[Chorus]\n변한 것은 나였어\n변한 것은 나였어\n변한 것은 나였어\n너의 잘못은 없었어\n\n변한 것은 나였어\n변한 것은 나였어\n변한 것은 나였어\n이젠 너무 늦었어`,
+      en: `[Verse 1]\nEvery day I blame you\nSaying I did nothing wrong\nThat's how I barely keep going\nThat's just how I've been living\nWith nothing to do, I walk the streets\nAnd then a thought hits me\nAll the problems\nWere made by me\n\n[Chorus]\nThe one who changed was me\nThe one who changed was me\nThe one who changed was me\nNone of this was your fault\n\nThe one who changed was me\nThe one who changed was me\nThe one who changed was me\nNow I can't take it back\n\n[Verse 2]\nI tried with everything I had\nTo turn back what had changed\nBut what won't work\nNever worked till the end\nNow what I'm supposed to do\nI don't know anything anymore\nOnly residue sticks to me and stays\n\n[Chorus]\nThe one who changed was me\nThe one who changed was me\nThe one who changed was me\nNone of this was your fault\n\nThe one who changed was me\nThe one who changed was me\nThe one who changed was me\nNow it's far too late`,
+      es: `[Verso 1]\nCada día te culpo\nDiciendo que yo no hice nada mal\nAsí es como apenas aguanto\nEsa ha sido mi forma de vivir\nSin nada que hacer, camino por la calle\nY de pronto me pega un pensamiento\nTodos los problemas\nLos estaba haciendo yo\n\n[Estribillo]\nEl que cambió fui yo\nEl que cambió fui yo\nEl que cambió fui yo\nTú no tuviste la culpa\n\nEl que cambió fui yo\nEl que cambió fui yo\nEl que cambió fui yo\nYa no hay forma de volver atrás\n\n[Verso 2]\nLo intenté con todas mis fuerzas\nPara deshacer lo que cambió\nPero lo que no funciona\nNo funcionó hasta el final\nAhora qué se supone que haga\nYa no sé nada\nSolo quedan restos pegados en mí\n\n[Estribillo]\nEl que cambió fui yo\nEl que cambió fui yo\nEl que cambió fui yo\nTú no tuviste la culpa\n\nEl que cambió fui yo\nEl que cambió fui yo\nEl que cambió fui yo\nAhora ya es demasiado tarde`,
+      ja: `[Verse 1]\n毎日君を責めて\n自分は悪くないって\nそれでどうにか持ちこたえる\nそれが俺の生き方だった\nすることもなく道を歩いて\nふと思うんだ\n問題は全部\n俺が作っていたって\n\n[Chorus]\n変わったのは俺だった\n変わったのは俺だった\n変わったのは俺だった\n君は悪くなかった\n\n変わったのは俺だった\n変わったのは俺だった\n変わったのは俺だった\nもう取り戻せない\n\n[Verse 2]\n変わったものを戻そうと\n必死でやってみたけど\n無理なものは\n最後まで無理だった\nもうどうすればいいのか\n何もわからない\nカスだけがまとわりついて残ってる\n\n[Chorus]\n変わったのは俺だった\n変わったのは俺だった\n変わったのは俺だった\n君は悪くなかった\n\n変わったのは俺だった\n変わったのは俺だった\n変わったのは俺だった\nもう遅すぎる`,
     },
   },
   {
     titles: {
       ko: "레드필",
       en: "Red Pill",
-      es: "Pildora Roja",
+      es: "Píldora Roja",
       ja: "レッドピル",
     },
     lyrics: {
       ko: `당신의\n손에 쥐어진\n빨간 약을 난 삼켜버렸고\n무책임하게\n당신을 꿈에 품었네\n날 탓하지 말아줘요\n\n두려움에\n완전히 젖어버린\n나의 꿈속에 남아줘요\n여전히\n난 변한 게 없는데\n세상은 너무 멀어보이네\n\n이미\n없어졌어\n아직\n살아있는데\n나를\n바라봐\n나를\n좋아하라고\n\n모두 다\n죽어버리라고\n소리를 암만 질러봐도\n어지러운\n목소리들만\n계속 메아리치고 있네\n\n이젠 그 무엇도\n아무 소용이 없네\n내가 먼저\n죽어버려야지\n\n이미\n없어졌어\n아직\n살아있는데\n나를\n바라봐\n나를\n좋아하라고`,
+      en: `The one\nHeld in your hand\nI swallowed that red pill\nIrresponsibly\nI held you inside my dream\nPlease don't blame me\n\nSoaked\nCompletely in fear\nStay inside my dream\nStill\nNothing in me has changed\nBut the world feels so far away\n\nAlready\nGone\nStill\nAlive\nLook\nAt me\nSay\nYou like me\n\nEven if I scream\nThat everyone\nShould just die\nOnly dizzy\nVoices\nKeep echoing back\n\nNow nothing\nWorks anymore\nI should\nDie first\n\nAlready\nGone\nStill\nAlive\nLook\nAt me\nSay\nYou like me`,
+      es: `La que\nLlevabas en la mano\nEsa píldora roja me la tragué\nSin pensar\nTe guardé dentro de mi sueño\nPor favor no me culpes\n\nEmpapado\nCompletamente de miedo\nQuédate dentro de mi sueño\nTodavía\nYo no he cambiado nada\nPero el mundo se ve demasiado lejos\n\nYa\nDesaparecí\nPero aún\nSigo vivo\nMírame\nA mí\nDime\nQue te gusto\n\nAunque grite\nQue todos\nDeberían morirse\nSolo voces\nMareadas\nSiguen haciendo eco\n\nAhora nada\nSirve de nada\nPrimero\nTendría que morir yo\n\nYa\nDesaparecí\nPero aún\nSigo vivo\nMírame\nA mí\nDime\nQue te gusto`,
+      ja: `君の\n手の中にあった\n赤い薬を俺は飲み込んで\n無責任に\n君を夢の中に抱えた\n俺を責めないでほしい\n\n恐怖に\nずぶ濡れになった\n俺の夢の中に残ってほしい\n今でも\n俺は何も変わってないのに\n世界は遠すぎて見える\n\nもう\n消えた\nまだ\n生きてるのに\n俺を\n見て\n俺を\n好きになれよ\n\nみんな\n死んでしまえと\nどれだけ叫んでみても\n眩暈みたいな\n声だけが\nずっと反響してる\n\nもう何も\n意味がない\n俺が先に\n死ぬしかない\n\nもう\n消えた\nまだ\n生きてるのに\n俺を\n見て\n俺を\n好きになれよ`,
     },
   },
 ];
