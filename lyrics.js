@@ -79,6 +79,50 @@ const lyricsData = [
       ja: `「赤い薬」を飲んだうちの爺さん \nYouTubeのコメント欄で国を憂い \nこの国を正してみるって\n悲壮な顔で出て行きました\n警察を殴ったうちの爺さん \n今度ばかりは出られないそうです\nうちは愛国者の家系 \nうちは烈士の家系 \n\n「目覚めた市民」うちの父さん\nサヨクのニュース番組の大ファンで \nこの国を正してみるって\n「ネトウヨは死ね」と喚いています\n説得工作に失敗した親父 \nいつになったら目が覚めるんですかね\nうちは愛国者の家系 \nうちは烈士の家系 \n\n「まともな保守」の僕にとって \nネットの掲示板は唯一の解放区 \nフェミ議員マジで嫌いだとか \nコメントに色々書き込みました\nイイネ数百もらうに成功した僕は\n今度ばかりは出られないそうです\nうちは愛国者の家系 \nうちはグズの家系`,
     },
   },
+  {
+    titles: {
+      ko: "캔들맨",
+      en: "Candleman",
+      es: "Candleman",
+      ja: "キャンドルマン",
+    },
+    lyrics: {
+      ko: `개미집을 지었어\n모든 걸 끌어다 지었어\n빗자루질 한 번에\n완전히 박살났어\n\n내가 세운 계획이 다\n휴지조각이 되었어\n내 전재산이 모두 다\n휴지조각이 되었어\n\n모든 걸 다 끌어모은\n내 바벨탑이 무너졌어\n모든 걸 끌어모아서\n또다시 지어보겠어\n\n내리막길은 언젠가\n끝을 찍고 올라가\n정신승리가 아니면\n버티기가 힘들어\n\n내가 세운 계획이 다\n휴지조각이 되었어\n내 전재산이 모두 다\n휴지조각이 되었어`,
+    },
+  },
+  {
+    titles: {
+      ko: "기시감",
+      en: "Deja Vu",
+      es: "Deja Vu",
+      ja: "デジャヴ",
+    },
+    lyrics: {
+      ko: `오늘 만난 그 여자애\n어디선가 본 것만 같아\n검은 눈에 검은 단발머리\n흔하디 흔한 스타일인데\n분위기가 뭔가 익숙한 것 같아\n생각해보니 그전도 그랬어\n\n내가 만났던 모든 여자들은\n소름 돋을 정도로 비슷했었지\n얼굴도 비슷해 분위기도 비슷해\n자석처럼 따라붙나 봐\n이제는 만날 때마다 느껴\n만날 때마다 그렇게 느껴져`,
+    },
+  },
+  {
+    titles: {
+      ko: "고해",
+      en: "Confession",
+      es: "Confesion",
+      ja: "告解",
+    },
+    lyrics: {
+      ko: `[Verse 1]\n매일 너를 원망하고\n나는 잘못이 없다고\n그나마 버틸 만해\n이게 나의 사는 태도\n할 게 없어 길을 걷다\n문득 드는 생각인데\n문젠 모두\n내가 만드는 거였어\n\n[Chorus]\n변한 것은 나였어\n변한 것은 나였어\n변한 것은 나였어\n너의 잘못은 없었어\n\n변한 것은 나였어\n변한 것은 나였어\n변한 것은 나였어\n이젠 돌이킬 수 없어\n\n[Verse 2]\n변한 것을 돌리려고\n기를 쓰고 해봤는데\n안 되는 건\n끝까지 안되었어\n이젠 내가 어떡할지\n아무것도 모르겠고\n찌꺼기만 달라붙어 남아있어\n\n[Chorus]\n변한 것은 나였어\n변한 것은 나였어\n변한 것은 나였어\n너의 잘못은 없었어\n\n변한 것은 나였어\n변한 것은 나였어\n변한 것은 나였어\n이젠 너무 늦었어`,
+    },
+  },
+  {
+    titles: {
+      ko: "레드필",
+      en: "Red Pill",
+      es: "Pildora Roja",
+      ja: "レッドピル",
+    },
+    lyrics: {
+      ko: `당신의\n손에 쥐어진\n빨간 약을 난 삼켜버렸고\n무책임하게\n당신을 꿈에 품었네\n날 탓하지 말아줘요\n\n두려움에\n완전히 젖어버린\n나의 꿈속에 남아줘요\n여전히\n난 변한 게 없는데\n세상은 너무 멀어보이네\n\n이미\n없어졌어\n아직\n살아있는데\n나를\n바라봐\n나를\n좋아하라고\n\n모두 다\n죽어버리라고\n소리를 암만 질러봐도\n어지러운\n목소리들만\n계속 메아리치고 있네\n\n이젠 그 무엇도\n아무 소용이 없네\n내가 먼저\n죽어버려야지\n\n이미\n없어졌어\n아직\n살아있는데\n나를\n바라봐\n나를\n좋아하라고`,
+    },
+  },
 ];
 
 const langList = ["ko", "en", "es", "ja"];
@@ -88,16 +132,18 @@ function renderSongs() {
   const list = document.getElementById("songs-list");
   list.innerHTML = "";
   lyricsData.forEach((song, idx) => {
+    const title = song.titles[currentLang] || song.titles.ko || "";
+    const subtitle = song.titles.en || song.titles.ko || "";
+    const lyrics = song.lyrics[currentLang] || song.lyrics.ko || "";
+
     const block = document.createElement("div");
     block.className = "song-block";
     block.innerHTML = `
       <div class="song-title">
-        <span>${song.titles[currentLang]}</span>
-        <span class="subtitle">${song.titles["en"]}${
-      currentLang !== "en" ? "" : ""
-    }</span>
+        <span>${title}</span>
+        <span class="subtitle">${subtitle}${currentLang !== "en" ? "" : ""}</span>
       </div>
-      <div class="lyrics">${song.lyrics[currentLang]}</div>
+      <div class="lyrics">${lyrics}</div>
     `;
     block.addEventListener("click", (e) => {
       if (
