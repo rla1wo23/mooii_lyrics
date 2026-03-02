@@ -87,10 +87,10 @@ const lyricsData = [
       ja: "キャンドルマン",
     },
     lyrics: {
-      ko: `개미집을 지었어\n모든 걸 끌어다 지었어\n빗자루질 한 번에\n완전히 박살났어\n\n내가 세운 계획이 다\n휴지조각이 되었어\n내 전재산이 모두 다\n휴지조각이 되었어\n\n모든 걸 다 끌어모은\n내 바벨탑이 무너졌어\n모든 걸 끌어모아서\n또다시 지어보겠어\n\n내리막길은 언젠가\n끝을 찍고 올라가\n정신승리가 아니면\n버티기가 힘들어\n\n내가 세운 계획이 다\n휴지조각이 되었어\n내 전재산이 모두 다\n휴지조각이 되었어`,
-      en: `I built an anthill\nI dragged everything in and built it\nWith just one sweep of a broom\nIt got smashed to pieces\n\nAll the plans I made\nTurned into scraps of paper\nAll my savings, every bit of it\nTurned into scraps of paper\n\nEverything I had gathered\nMy tower of Babel collapsed\nI'll gather everything again\nAnd try to build it once more\n\nA downhill road, someday\nHits the bottom and climbs back up\nIf I don't win in my own head\nIt's too hard to hold on\n\nAll the plans I made\nTurned into scraps of paper\nAll my savings, every bit of it\nTurned into scraps of paper`,
-      es: `Construí un hormiguero\nJunté todo lo que pude y lo levanté\nCon una sola barrida de escoba\nQuedó hecho pedazos\n\nTodos los planes que hice\nSe volvieron pedazos de papel\nTodo mi patrimonio, todo\nSe volvió pedazos de papel\n\nTodo lo que había juntado\nMi torre de Babel se derrumbó\nVoy a volver a juntar todo\nY lo levantaré otra vez\n\nLa bajada, algún día\nToca fondo y vuelve a subir\nSi no me convenzo a la fuerza\nEs demasiado duro aguantar\n\nTodos los planes que hice\nSe volvieron pedazos de papel\nTodo mi patrimonio, todo\nSe volvió pedazos de papel`,
-      ja: `蟻塚を作った\n全部かき集めて作った\nほうきでひと掃きしただけで\n完全に粉々になった\n\n俺が立てた計画は全部\n紙くずになった\n俺の全財産も全部\n紙くずになった\n\n全部かき集めて積み上げた\n俺のバベルの塔が崩れた\n全部かき集めて\nもう一度建ててみる\n\n下り坂はいつか\n底を打ってまた上がる\n気持ちで勝てなきゃ\n踏ん張るのはきつい\n\n俺が立てた計画は全部\n紙くずになった\n俺の全財産も全部\n紙くずになった`,
+      ko: `개미집을 지어놨어\n모든걸 끌어다 지었어\n빗자루질 한방에 다\n모든게 박살이 났어\n\n내가 세운 계획이 다\n휴지조각이 되었어\n내가 세운 계획이 다\n휴지조각이 되었어\n\n모든걸 다 끌어모은\n내 바벨탑이 무너졌어\n모든걸 끌어모아서\n또다시 지어보겠어\n\n내리막길은 언젠가\n끝을찍고 올라가\n정신승리가 아니면\n버티기가 힘들어\n\n내가 세운 계획이 다\n휴지조각이 되었어\n내가 세운 계획이 다\n휴지조각이 되었어`,
+      en: `I built an anthill\nI dragged in everything and built it\nWith one sweep of a broom\nEverything was smashed to pieces\n\nAll the plans I made\nTurned into scraps of paper\nAll the plans I made\nTurned into scraps of paper\n\nI gathered everything\nMy tower of Babel collapsed\nI'll gather everything\nAnd build it again\n\nA downhill road, someday\nHits the end and climbs back up\nIf it isn't a mental victory\nIt's hard to hold on\n\nAll the plans I made\nTurned into scraps of paper\nAll the plans I made\nTurned into scraps of paper`,
+      es: `Construí un hormiguero\nArrastré de todo y lo levanté\nDe un solo escobazo\nTodo quedó hecho pedazos\n\nTodos los planes que hice\nSe volvieron pedazos de papel\nTodos los planes que hice\nSe volvieron pedazos de papel\n\nJunté todo\nMi torre de Babel se derrumbó\nVoy a juntar todo\nY volveré a construir\n\nLa bajada, algún día\nToca el final y vuelve a subir\nSi no es una victoria mental\nEs difícil aguantar\n\nTodos los planes que hice\nSe volvieron pedazos de papel\nTodos los planes que hice\nSe volvieron pedazos de papel`,
+      ja: `蟻塚を作っておいた\n全部かき集めて作った\nほうきでひと掃きしただけで\n全部が粉々になった\n\n俺が立てた計画は全部\n紙くずになった\n俺が立てた計画は全部\n紙くずになった\n\n全部をかき集めた\n俺のバベルの塔が崩れた\n全部かき集めて\nまた建ててみる\n\n下り坂はいつか\n底を打って上がっていく\n精神勝利じゃなければ\n踏ん張るのはきつい\n\n俺が立てた計画は全部\n紙くずになった\n俺が立てた計画は全部\n紙くずになった`,
     },
   },
   {
@@ -101,10 +101,10 @@ const lyricsData = [
       ja: "既視感",
     },
     lyrics: {
-      ko: `오늘 만난 그 여자애\n어디선가 본 것만 같아\n검은 눈에 검은 단발머리\n흔하디 흔한 스타일인데\n분위기가 뭔가 익숙한 것 같아\n생각해보니 그전도 그랬어\n\n내가 만났던 모든 여자들은\n소름 돋을 정도로 비슷했었지\n얼굴도 비슷해 분위기도 비슷해\n자석처럼 따라붙나 봐\n이제는 만날 때마다 느껴\n만날 때마다 그렇게 느껴져`,
-      en: `That girl I met today\nFeels like I've seen her somewhere before\nBlack eyes and a short black bob\nIt's just a very common style\nBut something in her vibe feels familiar\nNow that I think of it, it was like that before too\n\nEvery girl I used to meet\nWas similar enough to give me chills\nSimilar face, similar mood\nMaybe they stick to me like magnets\nNow I feel it every time I meet someone\nEvery time, it feels exactly like that`,
-      es: `La chica que conocí hoy\nSiento que la he visto en alguna parte\nOjos negros y melena corta negra\nEs un estilo de lo más común\nPero hay algo en su vibra que me resulta familiar\nAhora que lo pienso, antes también era así\n\nTodas las chicas que conocí\nSe parecían, hasta dar escalofríos\nCara parecida, aire parecido\nCapaz se me pegan como imanes\nAhora lo siento cada vez que conozco a alguien\nCada vez se siente exactamente igual`,
-      ja: `今日会ったあの子\nどこかで見た気がする\n黒い目に黒いボブ\nありふれたスタイルなのに\n雰囲気が妙に馴染みある\n考えてみれば前もそうだった\n\n俺が会ってきた女の子はみんな\nぞっとするほど似ていた\n顔も似てる 雰囲気も似てる\n磁石みたいに引き寄せられるのかも\nもう会うたびに感じる\n会うたびにそんな気がする`,
+      ko: `오늘만난 그 여자애\n어디선가 본것만 같아\n검은 눈에 검은 머리\n어디서도 볼 수 있는 데\n\n분위기가 뭔가 비슷했어\n예전에도 분명 그랬어\n\n결코 이뤄지진 않지만\n자석처럼 따라 가나봐\n\n이제는 만날 때마다 느껴\n만날 때마다 그렇게 느껴\n이제는 만날 때마다 느껴\n만날 때마다 그렇게 느껴`,
+      en: `That girl I met today\nFeels like I've seen her somewhere\nBlack eyes and black hair\nThe kind you can see anywhere\n\nSomething in the vibe felt similar\nIt was definitely like this before too\n\nIt never really comes true\nBut I guess I follow like a magnet\n\nNow I feel it every time I meet her\nEvery time, I feel it like that\nNow I feel it every time I meet her\nEvery time, I feel it like that`,
+      es: `La chica que conocí hoy\nSiento que la he visto en alguna parte\nOjos negros y pelo negro\nDe los que puedes ver en cualquier lado\n\nHabía algo parecido en su ambiente\nAntes también fue así, seguro\n\nNunca llega a cumplirse\nPero supongo que la sigo como un imán\n\nAhora lo siento cada vez que la veo\nCada vez lo siento así\nAhora lo siento cada vez que la veo\nCada vez lo siento así`,
+      ja: `今日会ったあの子\nどこかで見た気がする\n黒い目に黒い髪\nどこにでもいるような\n\n雰囲気がどこか似ていた\n前にも確かにそうだった\n\n決して叶いはしないけど\n磁石みたいに追ってしまうみたいだ\n\nもう会うたびに感じる\n会うたびにそう感じる\nもう会うたびに感じる\n会うたびにそう感じる`,
     },
   },
   {
