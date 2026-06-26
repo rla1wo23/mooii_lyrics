@@ -156,7 +156,7 @@ const lyricsData = [
     id: "deja-vu",
     titles: { ko: "기시감", en: "Deja Vu", es: "Deja Vu", ja: "既視感" },
     credits: {
-      lyrics: { ko: "오준명", en: "Oh Jun-myung", es: "Oh Jun-myung", ja: "オ・ジュンミョン" },
+      lyrics: { ko: "오준명, 손창현", en: "Oh Jun-myung, Son Chang-hyun", es: "Oh Jun-myung, Son Chang-hyun", ja: "オ・ジュンミョン, ソン・チャンヒョン" },
       composer: { ko: "김재현, 손창현", en: "Kim Jae-hyun, Son Chang-hyun", es: "Kim Jae-hyun, Son Chang-hyun", ja: "キム・ジェヒョン, ソン・チャンヒョン" }
     },
     theme: {
@@ -234,8 +234,8 @@ const lyricsData = [
     id: "redpill",
     titles: { ko: "레드필", en: "Red Pill", es: "Píldora Roja", ja: "レッドピル" },
     credits: {
-      lyrics: { ko: "김준성", en: "Kim Jun-sung", es: "Kim Jun-sung", ja: "キム・ジュンソン" },
-      composer: { ko: "김준성", en: "Kim Jun-sung", es: "Kim Jun-sung", ja: "キム・ジュンソン" }
+      lyrics: { ko: "김준성, 손창현", en: "Kim Jun-sung, Son Chang-hyun", es: "Kim Jun-sung, Son Chang-hyun", ja: "キム・ジュンソン, ソン・チャンヒョン" },
+      composer: { ko: "김준성, 손창현", en: "Kim Jun-sung, Son Chang-hyun", es: "Kim Jun-sung, Son Chang-hyun", ja: "キム・ジュンソン, ソン・チャンヒョン" }
     },
     theme: {
       ko: "여성에 대한 왜곡된 망상과 피해의식을 표현한 곡입니다.",
