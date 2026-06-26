@@ -1,153 +1,487 @@
-body {
-  font-family: "Noto Sans KR", "Noto Sans JP", "Noto Sans", Arial, sans-serif;
-  background: #f7f7fa;
-  margin: 0;
-  color: #222;
+/* Global Design Tokens & Base Styles */
+* {
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Inter", "Noto Sans KR", "Noto Sans JP", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  background: radial-gradient(circle at top, #1a1c24 0%, #0b0c0f 100%);
+  background-attachment: fixed;
+  margin: 0;
+  color: #e2e8f0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header & Navigation Styling */
 header {
   position: relative;
-  background: #fff;
-  padding: 2rem 1rem 1rem 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 3rem 1.5rem 2rem 1.5rem;
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
+
 .header-inner {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1.5rem;
   position: relative;
 }
+
 header h1 {
-  margin: 0 0 1rem 0;
-  font-size: 2.2rem;
-  letter-spacing: 0.1em;
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
+
+/* Slogan Style */
+.slogan {
+  font-size: 1.05rem;
+  color: #94a3b8;
+  margin: 0.5rem 0 2rem 0;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  font-style: italic;
+  opacity: 0.95;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Instagram Logo Animation */
+.insta-link {
+  margin-left: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  text-decoration: none;
+  z-index: 10;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.insta-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: border-color 0.3s;
+}
+
+.insta-link:hover {
+  transform: scale(1.15) rotate(-8deg);
+}
+
+.insta-link:hover .insta-img {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+/* Language Switcher */
 .lang-switch {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
+  margin-bottom: 2rem;
 }
+
 .lang-switch button {
-  background: #e0e0e0;
-  border: none;
-  border-radius: 20px;
-  padding: 0.5rem 1.2rem;
-  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 30px;
+  padding: 0.55rem 1.3rem;
+  font-size: 0.9rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.25s ease;
+  font-family: inherit;
 }
-.lang-switch button.active {
-  background: #222;
+
+.lang-switch button:hover {
+  background: rgba(255, 255, 255, 0.08);
   color: #fff;
+  border-color: rgba(255, 255, 255, 0.15);
 }
-main {
-  max-width: 700px;
-  margin: 2rem auto;
+
+.lang-switch button.active {
+  background: #ffffff;
+  color: #0f0f11;
+  border-color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
+}
+
+/* Premium Search Input Wrapper */
+.search-wrap {
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
   padding: 0 1rem;
 }
-.song-block {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  margin-bottom: 1.5rem;
-  cursor: pointer;
-  transition: box-shadow 0.2s;
-  overflow: hidden;
-}
-.song-block:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-.song-title {
-  font-size: 1.3rem;
-  font-weight: bold;
-  padding: 1.2rem 1.5rem;
-  background: #f0f0f5;
-  border-bottom: 1px solid #eee;
+
+.search-box {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 0 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+.search-box:focus-within {
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.03), inset 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.search-icon {
+  color: #64748b;
+  margin-right: 0.8rem;
+  flex-shrink: 0;
+  transition: color 0.3s;
+}
+
+.search-box:focus-within .search-icon {
+  color: #94a3b8;
+}
+
+.search-box input {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  color: #f1f5f9;
+  font-size: 1rem;
+  padding: 0.9rem 0;
+  font-family: inherit;
+}
+
+.search-box input::placeholder {
+  color: #64748b;
+}
+
+/* Main Container */
+main {
+  max-width: 750px;
+  margin: 1rem auto 4rem auto;
+  padding: 0 1.5rem;
+}
+
+/* No Results placeholder */
+.no-results {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #64748b;
+  font-size: 1.1rem;
+  border: 1px dashed rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.01);
+}
+
+/* Song Block Accordion (Glassmorphism) */
+.song-block {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.song-block:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.035);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.song-block.open {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Song Header / Title Row */
+.song-title {
+  font-family: "Outfit", "Noto Sans KR", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  padding: 1.3rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.title-main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.title-text {
+  color: #f8fafc;
+  letter-spacing: -0.01em;
+}
+
+/* Instrumental Tag badge */
+.instrument-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  margin-left: 0.4rem;
+  font-family: "Inter", sans-serif;
+  vertical-align: middle;
+}
+
+/* Subtitle (translated / alternative title) */
 .song-title .subtitle {
   font-size: 1rem;
-  color: #888;
-  font-weight: normal;
+  color: #64748b;
+  font-weight: 400;
+  margin-right: auto;
+  margin-left: 0.5rem;
+  letter-spacing: 0.02em;
+  font-family: "Inter", sans-serif;
 }
-.lyrics {
-  display: none;
-  padding: 1.2rem 1.5rem;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  background: #fff;
-  white-space: pre-line;
-}
-.song-block.open .lyrics {
-  display: block;
-  animation: fadeIn 0.3s;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-footer {
-  text-align: center;
-  color: #aaa;
-  font-size: 0.95rem;
-  margin: 2rem 0 1rem 0;
-}
-.insta-link {
-  position: static;
-  margin-top: 0;
-  margin-left: 1rem;
+
+/* Chevron Rotate Icon */
+.toggle-icon {
+  color: #64748b;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
-  padding: 0;
-  z-index: 10;
-  transition: transform 0.15s;
-  background: none;
-  border: none;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s;
+  flex-shrink: 0;
 }
-.insta-img {
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
-  object-fit: cover;
+
+.song-block:hover .toggle-icon {
+  color: #94a3b8;
+}
+
+.song-block.open .toggle-icon {
+  transform: rotate(180deg);
+  color: #f1f5f9;
+}
+
+/* Expanded Card Content Container */
+.song-content {
+  display: none;
+  padding: 1.6rem 2rem 2.5rem 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.15);
+  animation: slideDown 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.song-block.open .song-content {
   display: block;
-  box-shadow: 0 2px 8px rgba(180, 156, 110, 0.13);
-  background: #fff;
-  border: none;
 }
-.insta-link:hover .insta-img {
-  transform: scale(1.12) rotate(-6deg);
-  box-shadow: 0 4px 16px rgba(180, 156, 110, 0.18);
+
+/* Inner Sections (Credits, Theme, References) */
+.song-credits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.88rem;
+  color: #94a3b8;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  padding-bottom: 1rem;
 }
-@media (max-width: 600px) {
-  .song-title {
-    font-size: 1.05rem;
-    padding: 1rem;
+
+.credit-item strong {
+  color: #cbd5e1;
+  font-weight: 600;
+  margin-right: 0.3rem;
+}
+
+.song-section {
+  margin-bottom: 1.8rem;
+}
+
+.song-section:last-of-type {
+  margin-bottom: 0;
+}
+
+.section-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #64748b;
+  margin-bottom: 0.6rem;
+}
+
+/* Theme/Introduction Style */
+.theme-text {
+  font-size: 0.98rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+/* References Badges */
+.ref-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.ref-tag {
+  font-size: 0.82rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 0.3rem 0.75rem;
+  border-radius: 8px;
+  color: #94a3b8;
+  transition: all 0.2s ease;
+}
+
+.ref-tag:hover {
+  background: rgba(255, 255, 255, 0.07);
+  color: #f1f5f9;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Lyrics Section Styling */
+.lyrics-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  padding-top: 1.6rem;
+  margin-top: 1.6rem;
+}
+
+.lyrics-text {
+  font-size: 1.08rem;
+  line-height: 1.85;
+  color: #e2e8f0;
+  white-space: pre-line;
+  text-align: left;
+  letter-spacing: 0.02em;
+  padding-left: 0.5rem;
+}
+
+/* Animation Keys */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
   }
-  .lyrics {
-    padding: 1rem;
-    font-size: 0.98rem;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  color: #475569;
+  font-size: 0.85rem;
+  margin: 4rem 0 3rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  padding-top: 2rem;
+}
+
+/* Responsive Rules for Small Devices */
+@media (max-width: 650px) {
+  header {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  
+  header h1 {
+    font-size: 2.1rem;
+  }
+
+  .slogan {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .lang-switch {
+    gap: 0.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .lang-switch button {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.82rem;
+  }
+
   main {
-    padding: 0 0.2rem;
+    padding: 0 0.8rem;
+    margin-top: 0.5rem;
   }
+
+  .song-title {
+    font-size: 1.15rem;
+    padding: 1.1rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .song-title .subtitle {
+    font-size: 0.88rem;
+    width: 100%;
+    margin-top: 0.2rem;
+    color: #64748b;
+  }
+
+  .song-content {
+    padding: 1.2rem 1.2rem 1.8rem 1.2rem;
+  }
+
+  .lyrics-text {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  
   .insta-link {
-    width: 38px;
-    height: 38px;
-    margin-left: 0.5rem;
+    width: 36px;
+    height: 36px;
+    margin-left: 0.8rem;
   }
+  
   .insta-img {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     border-radius: 8px;
   }
 }
