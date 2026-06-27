@@ -1,13 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mooii Lyrics</title>
     <!-- Google Fonts for premium typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800&family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800&family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -21,6 +23,13 @@
           aria-label="Mooii Instagram">
           <img src="static/icon.avif" alt="Instagram" class="insta-img" />
         </a>
+        <a
+          href="https://www.youtube.com/@bandthemooii"
+          class="youtube-link"
+          target="_blank"
+          aria-label="Mooii YouTube">
+          YouTube
+        </a>
       </div>
       <div class="lang-switch">
         <button data-lang="ko">한글</button>
@@ -28,19 +37,32 @@
         <button data-lang="es">Español</button>
         <button data-lang="ja">日本語</button>
       </div>
-      
-      <!-- Band slogan that changes dynamically based on selected language -->
-      <p id="slogan" class="slogan">우리가 실제로 보고 겪은 일들을, 최대한 솔직하게</p>
-      
 
+      <!-- Band slogan that changes dynamically based on selected language -->
+      <p id="slogan" class="slogan">
+        우리가 실제로 보고 겪은 일들을, 최대한 솔직하게
+      </p>
     </header>
-    
+
     <main id="songs-list">
       <!-- 곡 리스트가 JS로 렌더링됩니다 -->
     </main>
-    
+
     <footer>
       <p>© 2025 Mooii Band</p>
+      <p class="footer-note">
+        무이 멤버들 각각 나이도 다르고, 지지하는 정당도 서로 다르고, 성별도
+        다르고, 좌파도 있고, 우파도 있고 사건을 보는 시각도 다릅니다.
+        <br />가사가 조금 불편하시더라도 그냥 그런갑다 하고 들어주세요.<br /><br />Members:
+        김다미/김재현/손창현/정민구/ Special Member: 김준성(Ex-bassist)
+      </p>
+      <p class="footer-note">
+        Mooii members are different in age, political support, gender, and
+        ideology. Some are left-wing, some are right-wing, and we see events
+        from different perspectives. Please just listen to our songs as they
+        are.<br /><br />Members: Kim Dami / Kim Jaehyun / Son Changhyun / Jeong
+        Mingu / Special Member: Kim Junseong(Ex-bassist)
+      </p>
     </footer>
     <script src="lyrics.js"></script>
   </body>
