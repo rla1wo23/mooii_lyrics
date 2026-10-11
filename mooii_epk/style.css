@@ -317,6 +317,48 @@ section {
   line-height: 1.5;
 }
 
+.album-cover {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid var(--line);
+}
+
+/* ---------- Album hero (stacked: large cover, then copy below) ---------- */
+.album-hero {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.album-intro {
+  max-width: 840px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.album-intro .album-meta {
+  justify-content: center;
+}
+
+.album-intro .lead {
+  max-width: none;
+  font-size: 1rem;
+}
+
+.album-cover-hero {
+  width: 100%;
+  max-width: 440px;
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
 .album-meta {
   display: flex;
   flex-wrap: wrap;
@@ -413,6 +455,73 @@ section {
 .track-detail .label {
   color: var(--ink-bright);
   font-weight: 600;
+}
+
+.track-detail .label.ref-label {
+  font-style: italic;
+}
+
+.track-behind {
+  margin-top: 0.9rem;
+  padding-top: 0.7rem;
+  border-top: 1px dashed var(--line);
+}
+
+.track-behind .behind-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-dimmer);
+}
+
+.track-behind .behind-label + p {
+  margin-top: 0.35rem;
+}
+
+.track-refs {
+  margin-top: 0.9rem;
+  padding-top: 0.7rem;
+  border-top: 1px dashed var(--line);
+}
+
+.track-refs .refs-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-dimmer);
+}
+
+.track-refs .refs-label + p {
+  margin-top: 0.35rem;
+}
+
+.track-refs .refs-label:not(:first-child) {
+  margin-top: 0.7rem;
+}
+
+.track-credits {
+  margin-top: 0.5rem;
+  font-size: 0.74rem;
+  line-height: 1.6;
+  color: var(--ink-dimmer);
+}
+
+.track-lyrics {
+  margin-top: 0.9rem;
+  padding-top: 0.7rem;
+  border-top: 1px dashed var(--line);
+}
+
+.track-lyrics .lyrics-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-dimmer);
+}
+
+.track-lyrics .lyrics-label + p {
+  margin-top: 0.35rem;
+  white-space: pre-line;
 }
 
 .track-row .no,
@@ -733,4 +842,59 @@ footer {
 .footer-copy {
   font-size: 0.78rem;
   color: var(--ink-dimmer);
+}
+
+.track-behind .jam-player {
+  display: block;
+  width: 100%;
+  margin: 4px 0 14px;
+}
+
+/* ---------- Language toggle ---------- */
+.lang-toggle {
+  display: inline-flex;
+  gap: 0.15rem;
+  padding-left: 1rem;
+  border-left: 1px solid var(--line);
+}
+
+.epk-nav-links .lang-toggle a {
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+}
+
+.epk-nav-links .lang-toggle a.active {
+  color: var(--ink-bright);
+  background: var(--glass-hover);
+}
+
+/* ---------- English page extras ---------- */
+.track-row .title-ko {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--ink-dimmer);
+}
+
+.track-note {
+  font-size: 0.82rem;
+  color: var(--ink-dimmer);
+}
+
+.track-social {
+  margin-top: 0.9rem;
+  padding-top: 0.7rem;
+  border-top: 1px dashed var(--line);
+}
+
+.track-social .social-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-dimmer);
+}
+
+.track-social .social-label + p {
+  margin-top: 0.35rem;
 }
